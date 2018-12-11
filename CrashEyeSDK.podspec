@@ -19,7 +19,6 @@ Pod::Spec.new do |s|
 
   s.homepage         = 'https://github.com/hydra1983/CrashEyeSDK'
   s.author           = { 'hydra1983' => 'hydra1983@gmail.com' }
-  s.platform         = :ios  
   s.source           = { :git => 'https://github.com/hydra1983/CrashEyeSDK.git', :tag => s.version.to_s }
   s.source_files =  'CrashEyeSDK/Headers/*.h'
   s.preserve_paths = 'CrashEyeSDK/libCrasheye.a'
@@ -30,4 +29,5 @@ Pod::Spec.new do |s|
     'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/CrashEyeSDK"',
     'HEADER_SEARCH_PATHS' => '"${PODS_ROOT}/Headers/CrashEyeSDK"' }
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
+  s.libraries =  [ 'z', 'c++']
 end
