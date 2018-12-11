@@ -29,5 +29,5 @@ Pod::Spec.new do |s|
     'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/CrashEyeSDK"',
     'HEADER_SEARCH_PATHS' => '"${PODS_ROOT}/Headers/CrashEyeSDK"' }
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.libraries =  [ 'z', 'c++']
+  s.libraries = ['z', 'c++', 'icucore']
 end
